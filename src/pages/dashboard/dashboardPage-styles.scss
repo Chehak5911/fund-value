@@ -1,0 +1,104 @@
+.dashboardPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vh;
+  
+    // Styling for the logo
+    img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+  
+      @media (max-width: 768px) {
+        width: 240px;
+      }
+  
+      @media (max-width: 480px) {
+        width: 200px;
+      }
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin: 20px 0;
+        text-align: center;
+    
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+    
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+      
+    table {
+      width: 100%;
+      max-width: 500px;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px;
+  
+      @media (max-width: 480px) {
+        max-width: 90%;
+        overflow-x: auto;
+      }
+  
+      tr {
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+      }
+  
+      td {
+        padding: 12px 20px;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 16px;
+  
+        @media (max-width: 768px) {
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+  
+        @media (max-width: 480px) {
+          padding: 8px 10px;
+          font-size: 12px;
+        }
+      }
+  
+      td:first-child {
+        font-weight: bold;
+        text-align: left;
+        color: #333;
+      }
+  
+      td:last-child {
+        text-align: right;
+        color: #555;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+  
+      table {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+  
